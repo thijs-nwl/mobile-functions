@@ -1,0 +1,14 @@
+{
+  "name": "mobilefunctions",
+  "version": "1.0.0",
+  "description": "call handy functions",
+  "main": "log.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "make-runnable": "^1.3.6"
+  }
+}
