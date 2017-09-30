@@ -13,7 +13,7 @@ module.exports = {
         base: JSON.parse(body).ticker.base,
         price: x
       }
-      console.log(obj.base + " is " + obj.price + " euro waard");
+      console.log(obj.base + " is nu " + obj.price + " euro waard");
     }
     });
   }
