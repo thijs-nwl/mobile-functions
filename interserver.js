@@ -1,16 +1,16 @@
 const app = require('express')();
 const fs = require('fs');
-
-const fs = require('fs');
-const { URL } = require('url');
-const fileUrl = new URL('content://0@media/external/file/180');
-
+const os = require('os');
+const path = require("path");
 
 app.get('/', (req, res) => {
-	res.send('hello world');
-	console.log(fs.readFileSync(fileUrl));
+	res.send('hello world')
+	console.log(os.networkInterfaces())
+	console.log(os.platform())
+	console.log(os.arch());
+	console.log(fs.readdirSync('U:'))
 })
 
-app.listen(3000, () => {
+app.listen(3000,'0.0.0.0', () => {
 	console.log('listening on 3000....')
 })
